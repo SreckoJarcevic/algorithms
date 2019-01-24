@@ -22,6 +22,9 @@ class QuickUnionAl {
   }
 
   union(p, q) {
+    // To merge components containing p and q,
+    // set the id of p's root to the id of q's root.
+    
     const rootP = this.findUnionRoot(p);
     const rootQ = this.findUnionRoot(q);
 
